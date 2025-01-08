@@ -10,3 +10,6 @@ jobs:
     steps:
       - name: identify user
         run: echo "Hello ${{ github.actor }}"
+      
+      - name: idk
+        run: echo "something"
