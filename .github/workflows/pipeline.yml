@@ -7,4 +7,5 @@ jobs:
   Practice-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      run: echo "Hello ${{ github.actor }}"
+      - name: identify user
+        run: echo "Hello ${{ github.actor }}"
