@@ -1,0 +1,21 @@
+name: Migrate Jenkinsfile to GitHub Actions
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Identify User
+        run: echo "Hello ${{ github.actor }}"
+
+      - name: IDK
+        run: echo "something"
